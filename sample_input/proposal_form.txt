@@ -1,0 +1,8 @@
+Identity: Alex Morgan
+Age: 39
+Gender: Male
+Occupation: Driver
+Income: 85000
+Smoking: Yes
+Alcohol: Regular
+Riders: Accident, Critical_Illness
