@@ -34,7 +34,7 @@ All rating logic is externalized in `config/charts.json`:
 - `premium_table`
 - `rider_costs`
 
-## Run the underwriting flow
+## Run from CLI
 
 ```bash
 python underwriting_engine.py \
@@ -50,6 +50,26 @@ python underwriting_engine.py \
   --medical sample_input/medical_report.txt \
   --json
 ```
+
+## Run in Chrome (Web UI)
+
+1. Start the built-in web app:
+
+```bash
+python web_app.py --port 8765
+```
+
+2. Open this URL in Chrome:
+
+```text
+http://localhost:8765
+```
+
+3. Fill in proposal/medical fields and click **Evaluate**.
+
+The page will show:
+- Final Underwriting Output Report
+- JSON output payload (expandable section)
 
 ## Example outcome for included sample
 
