@@ -1,0 +1,35 @@
+{
+  "medical_chart": {
+    "hypertension": {"mild": 25, "moderate": 60, "severe": 125, "default": 25},
+    "diabetes": {"controlled": 50, "uncontrolled": 120, "default": 50},
+    "asthma": {"mild": 20, "moderate": 45, "severe": 90, "default": 20},
+    "bmi_obesity": {"class_1": 30, "class_2": 60, "class_3": 120, "default": 30},
+    "smoker": {"default": 75},
+    "alcohol": {"social": 10, "regular": 35, "heavy": 70}
+  },
+  "occupation_chart": {
+    "accountant": 0,
+    "teacher": 5,
+    "driver": 40,
+    "construction_worker": 60,
+    "pilot": 80,
+    "default": 15
+  },
+  "risk_rating_chart": [
+    {"min": 0, "max": 74, "category": "Standard", "decision": "Standard Acceptance"},
+    {"min": 75, "max": 149, "category": "Sub-standard A", "decision": "Acceptance with Loading/Exclusion"},
+    {"min": 150, "max": 224, "category": "Sub-standard B", "decision": "Acceptance with Loading/Exclusion"},
+    {"min": 225, "max": 299, "category": "Postpone", "decision": "Postponement"},
+    {"min": 300, "max": 9999, "category": "Decline", "decision": "Decline"}
+  ],
+  "premium_table": [
+    {"min_age": 18, "max_age": 30, "base_premium": 450.0},
+    {"min_age": 31, "max_age": 40, "base_premium": 600.0},
+    {"min_age": 41, "max_age": 50, "base_premium": 900.0},
+    {"min_age": 51, "max_age": 60, "base_premium": 1500.0}
+  ],
+  "rider_costs": {
+    "accident": 150.0,
+    "critical_illness": 220.0
+  }
+}
